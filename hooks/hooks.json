@@ -1,0 +1,18 @@
+{
+  "description": "Security linter hook that scans code for dangerous patterns before file writes",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/hooks/security-linter.js",
+            "timeout": 10,
+            "statusMessage": "Running security linter..."
+          }
+        ]
+      }
+    ]
+  }
+}

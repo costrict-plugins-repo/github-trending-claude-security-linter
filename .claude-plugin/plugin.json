@@ -1,0 +1,9 @@
+{
+  "name": "security-linter",
+  "version": "1.0.0",
+  "description": "Pre-tool-use security linter that blocks code containing eval(), Function constructor abuse, hardcoded API keys, Bearer tokens, AWS credentials, and innerHTML assignments before they are written to disk.",
+  "author": {
+    "name": "Plugin Author"
+  },
+  "keywords": ["security", "linter", "eval", "api-keys", "xss"]
+}
